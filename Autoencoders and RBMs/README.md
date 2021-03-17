@@ -4,7 +4,7 @@
 > An autoencoder is a feedforward neural network that attempts to learn a compressed representation of a dataset. This network architecture consists of one input layer, at least one hidden layer, and finally an output layer:
 
 <div align="center">
-<img src=mylib/misc/1.png?raw=true "Autoencoder" width=570 >
+<img src=misc/1.png?raw=true "Autoencoder" width=570 >
 </div>
 
 ---
@@ -21,7 +21,7 @@
 - RBMs are comprised of hidden and visible layers. Unlike traditional feedforward networks, the connections between visible and hidden layers of the RBM are undirected, implying that 'information' can travel in both the visible-to-hidden and hidden-to-visible directions:
 
 <div align="center">
-<img src=mylib/misc/2.png?raw=true "RBMs" width=570 >
+<img src=misc/2.png?raw=true "RBMs" width=570 >
 </div>
 
 - RBMs became widely used with the contrastive divergence algorithm (has three phases: a positive phase, a negative phase, and a weight update phase).
@@ -35,7 +35,7 @@ During the negative phase, we take h and propagate it back through the visible l
 - To train and test the RBM on MNIST dataset: ```python run.py```
 
 <div align="center">
-<img src=mylib/misc/3.png?raw=true "RBMs" width=570 >
+<img src=misc/3.png?raw=true "Result" width=570 >
 </div>
 
 > We apply min/max scaling to the dataset such that the pixel intensities are transformed to the range [0, 1].
@@ -46,6 +46,7 @@ During the negative phase, we take h and propagate it back through the visible l
 - RBMs paper: https://stanford.edu/~jlmcc/papers/PDP/Volume%201/Chap6_PDP86.pdf
 - Contrastive divergence paper: http://proceedings.mlr.press/v9/sutskever10a/sutskever10a.pdf
 - Min/max scaling: https://docs.tibco.com/pub/spotfire/5.5.0-march-2013/UsersGuide/norm/norm_scale_between_0_and_1.htm
+- In-depth theory: https://www.pyimagesearch.com/pyimagesearch-gurus/
 
 ---
 
