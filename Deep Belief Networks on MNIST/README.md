@@ -25,7 +25,7 @@
 - To train and test the DBN on MNIST dataset: ```python mnist.py```
 
 <div align="center">
-<img src=mylib/misc/3.png?raw=true "Result" width=500 >
+<img src=mylib/misc/3.png?raw=true "Result" width=450 >
 </div>
 
 - DBN correctly classified the digits with pretty good accuracy (98%).
@@ -34,7 +34,7 @@
 - To train and test the DBN on CIFAR-10 dataset: ```python cifar.py```
 
 <div align="center">
-<img src=mylib/misc/2.png?raw=true "Cifar" width=570 >
+<img src=mylib/misc/2.png?raw=true "Cifar" width=500 >
 </div>
 
 - Result:
@@ -51,7 +51,6 @@ precision    recall  f1-score   support
 8       0.00      0.00      0.00      1000
 9       0.00      0.00      0.00      1000
 avg / total       0.01      0.10      0.02     10000
-
 ```
 
 > Accuracy is worse than a random guess: DBN was not able to learn anything at all. They are not suited for image classification where there exists much variance in pose, color, and orientation as in the CIFAR-10 dataset.
