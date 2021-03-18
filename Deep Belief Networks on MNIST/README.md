@@ -28,6 +28,21 @@
 <img src=mylib/misc/3.png?raw=true "Result" width=450 >
 </div>
 
+```
+             precision    recall  f1-score   support
+          0       0.98      0.99      0.99      2361
+          1       0.99      0.99      0.99      2638
+          2       0.98      0.98      0.98      2306
+          3       0.98      0.97      0.97      2280
+          4       0.98      0.98      0.98      2252
+          5       0.97      0.97      0.97      2039
+          6       0.98      0.99      0.98      2285
+          7       0.98      0.98      0.98      2376
+          8       0.97      0.98      0.98      2224
+          9       0.98      0.97      0.98      2339
+avg / total       0.98      0.98      0.98     23100
+```
+
 - DBN correctly classified the digits with pretty good accuracy (98%).
 > We apply min/max scaling to the dataset such that the pixel intensities are transformed to the range [0, 1].
 
