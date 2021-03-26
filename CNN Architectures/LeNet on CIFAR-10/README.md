@@ -1,7 +1,7 @@
 # LeNet
 ### Training and testing on the CIFAR-10 dataset
 
-> This network is very simple, consisting of only an INPUT  layer, a single CONV => RELU  layer, and an output softmax classifier (a generalization of Logistic Regression used to handle multiple classes and return probabilities associated with each class label):
+> LeNet architecture:
 
 <div align="center">
 <img src=mylib/misc/1.png?raw=true "Autoencoder" width=500 >
