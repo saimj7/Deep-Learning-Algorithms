@@ -4,7 +4,7 @@
 > LeNet architecture:
 
 <div align="center">
-<img src=mylib/misc/1.png?raw=true "Autoencoder" width=500 >
+<img src=mylib/misc/1.png?raw=true "Architecture" width=500 >
 </div>
 
 ---
