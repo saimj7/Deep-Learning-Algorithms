@@ -22,9 +22,29 @@
 > We started to overfit during training. Overfitting occurs when a network is trying to model the training data too closely — in this case, trying to learn the patterns of the training data too closely == ultimately ends in disaster.
 
 - Now let us test with dropout: ```python train.py --network karpathynet --model output/cifar10_karpathynet_with_dropout.hdf5 --dropout 1 --epochs 100```. Result: 67% acc is a significant improvement to 10% without dropout.
+
+---
 ---
 
+### MiniVGGNet on the CIFAR-10 dataset
+
+> We stack multiple CONV => RELU layers prior to applying a single POOL layer. Doing this allows the network to learn more rich features from the CONV layers prior to applying a destructive POOL operation. Our architecture:
+
+<div align="center">
+<img src=mylib/misc/2.png?raw=true "Architecture" width=450 >
+</div>
+
+## Simple Theory
+- We define 2 sets of ```CONV => RELU => CONV => RELU => POOL``` layers.
+- To train and test with dropout: ```python train.py --network minivggnet --model output/cifar10_minivggnet_with_dropout.hdf5 --epochs 200```.
+- Testing acc is 83.64%.
+- Without dropout: ```python train.py --network minivggnet --model output/cifar10_minivggnet_without_dropout.hdf5 --epochs 200```.
+- Testing acc is 79.15% #Overfitting!
+
+>  As the net get deeper, more filters are learned and a higher dropout percentage is used. It is common to see dropout percentages in the range [0.25, 0.5], with larger values occurring in higher level layers of the network, especially amongst FC layers. Otherwise, we overfit.
+
 ## References
+- VGGNet: https://www.robots.ox.ac.uk/~vgg/research/very_deep/
 - KarpathyNet: https://cs.stanford.edu/people/karpathy/convnetjs/
 - More on Dropout: https://jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf
 - SGD parameters: https://keras.io/api/optimizers/#sgd
