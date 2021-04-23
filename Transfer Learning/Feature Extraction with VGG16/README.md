@@ -1,12 +1,13 @@
 # Transfer Learning
-### Feature Extraction with VGG16
+### Feature Extraction with VGG16; Testing on Kaggle cats vs. dogs
 
 > Basically we stop the propagation (feed forward) at an arbitrary layer, such as an activation or pooling layer, extract the values from the network at this time, and then use them as feature vectors.
 
 <div align="center">
-<img src=mylib/misc/tl.png?raw=true "Architecture" width=450 >
+<img src=mylib/misc/tl.png?raw=true "Architecture" width=430 >
 </div>
 ---
+
 ## Simple Theory
 - After removing the last FC layer from the VGG16 net above (right), we are left with a max pooling layer with output shape of 7 × 7 × 512 implying there are 512 filters each of size 7 × 7.
 - If we were to forward propagate an image, we would be left with 512, 7 × 7 activations that have either activated or not based on the image contents. Therefore, we can actually take these 7 × 7 × 512 = 25,088 values and treat them as a feature vector that quantifies the contents of an image.
