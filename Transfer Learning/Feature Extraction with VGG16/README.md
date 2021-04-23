@@ -6,6 +6,7 @@
 <div align="center">
 <img src=mylib/misc/tl.png?raw=true "Architecture" width=430 >
 </div>
+
 ---
 
 ## Simple Theory
@@ -36,4 +37,4 @@ avg / total       0.98      0.98      0.98      6250
 
 ---
 
-saimj7/ 22-04-2021 © <a href="http://saimj7.github.io" target="_blank">Sai_Mj</a>.
+saimj7/ 23-04-2021 © <a href="http://saimj7.github.io" target="_blank">Sai_Mj</a>.
